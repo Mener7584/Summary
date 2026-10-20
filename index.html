@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <title>Резюме</title>
+
+        <meta name="color-scheme" content="dark">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="icon" href="data:,">
+        <link rel="stylesheet" href="style.css">
+
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav>
+                <a href="#about">Про мене</a>
+                <a href="#skills">Навички</a>
+                <a href="#examples">Приклади</a>
+                <a href="#education">Освіта</a>
+                <a href="#languages">Мови</a>
+                <a href="#projects">Проєкти</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <aside class="main__aside">
+                <img class="main__profile-image" width="60" height="60" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F024%2F044%2F193%2Foriginal%2Fschool-kids-clipart-transparent-background-free-png.png&f=1&nofb=1&ipt=4b3926908cc5b00729453f29a8585a58636f638b461cce482d252669d5bedebe&ipo=images" alt="">
+
+                <div class="main__name">
+                    <span>Коряченко Денис</span>
+                    <span class="main__status">Студент</span>
+                </div>
+
+                <address>
+                    <div>
+                        <div>E-mail:</div>
+                        <span>denys.koriachenko@kitu.nau.edu.ua</span>
+                    </div>
+
+                    <div>
+                        <div>Номер телефону:</div>
+                        <span>+380685437701</span>
+                    </div>
+
+                    <div>
+                        <div>Місце проживання:</div>
+                        <span>Київ, Україна</span>
+                    </div>
+                </address>
+            </aside>
+
+            <section>
+                <h1>Резюме</h1>
+                <p>Моє особисте резюме створене для практичної роботи No3.</p>
+            </section>
+
+            <div class="main__body">
+                <div class="main__content">
+                    <section>
+                        <h2 id="about">Про мене</h2>
+                        <p>
+                            Студент 4 курсу, цікавлюся програмуванням, операційними системами
+                            та комп'ютерним обладнанням. Маю практичний досвід роботи з Linux
+                            і Windows, налаштування програмного забезпечення та роботи з
+                            комп'ютерним залізом. Постійно вдосконалюю свої технічні навички
+                            та працюю над власними проєктами.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 id="skills">Навички</h2>
+                        <ul>
+                            <li>Linux - налаштування та адміністрування системи</li>
+                            <li>Windows - налаштування та повсякденна робота</li>
+                            <li>Робота з комп'ютерним обладнанням</li>
+                            <li>HTML та CSS</li>
+                            <li>JavaScript</li>
+                            <li>C# та об'єктно-орієнтоване програмування</li>
+                            <li>emu8086 Assembler</li>
+                            <li>Робота з Git</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 id="examples">Приклад коду</h2>
+                        <pre>
+                            <code>const ANIMATION_ATTR = 'data-animation';
+
+const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+
+        entry.target.setAttribute(ANIMATION_ATTR, 'visible');
+        unobserveElement(entry.target);
+    }
+}, { threshold: 0.03 });
+
+initElements(document.body);
+
+function initElements(rootElement) {
+    for (const element of rootElement.querySelectorAll(`[${ANIMATION_ATTR}]`))
+        observeElement(element);
+}
+
+function observeElement(element) {
+    observer.observe(element);
+}
+
+function unobserveElement(element) {
+    observer.unobserve(element);
+}
+
+export { initElements, observeElement, unobserveElement };</code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <h2 id="education">Освіта</h2>
+                        <p>
+                            Загальна середня освіта. Здобуваю фахову освіту, 4 курс коледжу
+                            за спеціальністю, пов'язаною з інформаційними технологіями.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 id="languages">Мови</h2>
+                        <ul>
+                            <li>Українська: рідна</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 id="projects">Проєкти</h2>
+                        <h3>Brewometer</h3>
+                        <p>
+                            Власний вебпроєкт для роботи з оцінками та інформацією про напої.
+                            Розробляю frontend, структуру сторінок, стилі та JavaScript-логіку.
+                            Проєкт має багатомовну архітектуру та власну систему збирання.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
